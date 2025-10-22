@@ -11,3 +11,5 @@ THen we take the extracted data and we will do some manipulations, transformatio
 **/ Load /**
 In this final stage of the process we are going to take the new transaformed and prepared data and insert it into the final destination or target.
 
+(etl/docs/ETL.jpg)
+
