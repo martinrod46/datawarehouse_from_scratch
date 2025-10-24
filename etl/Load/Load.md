@@ -15,3 +15,4 @@ In this final stage of the process we are going to take the new transformed and 
 **SCD 0 (No Historization)**- Nothing should be changed at all, so no updates.
 **SCD 1 (Overwrite)**- Here we update the records with new information from the source system by overwriting the old value, so we loose the course history.
 **SCD 2 (Historization)**- All the changes that we get from the source system we are inserting the new records but without overwrite or delete the old data, so here we active the new records and inactive the previous ones.
+
