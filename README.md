@@ -10,7 +10,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 * Specifications
 
-    ** Data Sources: ** dasdasd
+    **Data Sources:**  dasdasd
     ## Data Quality: ##
     ## Integration: ##
     ## Scope: ##
