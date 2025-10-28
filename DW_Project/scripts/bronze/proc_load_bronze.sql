@@ -33,6 +33,9 @@ BEGIN
 		PRINT '>> Truncating Table: bronze.crm_cust_info';
 		TRUNCATE TABLE bronze.crm_cust_info;
 		PRINT '>> Inserting Data Into: bronze.crm_cust_info';
+
+		/* Inserting the data from cust_info.csv from the CRM source system */
+
 		BULK INSERT bronze.crm_cust_info
 		FROM 'C:\sql\dwh_project\datasets\source_crm\cust_info.csv'
 		WITH (
@@ -49,6 +52,9 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_prd_info;
 
 		PRINT '>> Inserting Data Into: bronze.crm_prd_info';
+
+		/* Inserting the data from prd_info.csv from the CRM source system */
+
 		BULK INSERT bronze.crm_prd_info
 		FROM 'C:\sql\dwh_project\datasets\source_crm\prd_info.csv'
 		WITH (
@@ -64,6 +70,10 @@ BEGIN
 		PRINT '>> Truncating Table: bronze.crm_sales_details';
 		TRUNCATE TABLE bronze.crm_sales_details;
 		PRINT '>> Inserting Data Into: bronze.crm_sales_details';
+
+		
+		/* Inserting the data from sales_info.csv from the CRM source system */
+
 		BULK INSERT bronze.crm_sales_details
 		FROM 'C:\sql\dwh_project\datasets\source_crm\sales_details.csv'
 		WITH (
@@ -83,6 +93,10 @@ BEGIN
 		PRINT '>> Truncating Table: bronze.erp_loc_a101';
 		TRUNCATE TABLE bronze.erp_loc_a101;
 		PRINT '>> Inserting Data Into: bronze.erp_loc_a101';
+
+		
+		/* Inserting the data from LOC_A101.csv from the ERP source system */
+
 		BULK INSERT bronze.erp_loc_a101
 		FROM 'C:\sql\dwh_project\datasets\source_erp\loc_a101.csv'
 		WITH (
@@ -98,6 +112,9 @@ BEGIN
 		PRINT '>> Truncating Table: bronze.erp_cust_az12';
 		TRUNCATE TABLE bronze.erp_cust_az12;
 		PRINT '>> Inserting Data Into: bronze.erp_cust_az12';
+
+		/* Inserting the data from CUST_AZ12.csv from the ERP source system */
+
 		BULK INSERT bronze.erp_cust_az12
 		FROM 'C:\sql\dwh_project\datasets\source_erp\cust_az12.csv'
 		WITH (
@@ -113,6 +130,9 @@ BEGIN
 		PRINT '>> Truncating Table: bronze.erp_px_cat_g1v2';
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 		PRINT '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
+
+		/* Inserting the data from PX_CAT_G1V2.csv from the ERP source system */
+
 		BULK INSERT bronze.erp_px_cat_g1v2
 		FROM 'C:\sql\dwh_project\datasets\source_erp\px_cat_g1v2.csv'
 		WITH (
